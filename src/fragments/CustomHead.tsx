@@ -1,9 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { HiChevronDoubleDown } from 'react-icons/hi'
+import { Link as Scroll } from 'react-scroll'
 
 export default function CustomHeader() {
   return (
@@ -50,23 +46,27 @@ export default function CustomHeader() {
 
       {/* Background image */}
       {/*backgroundImage: "url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp')",*/}
-      <div className="relative overflow-hidden bg-no-repeat bg-cover" style={{
-        backgroundPosition: "50%",
+      <div className="relative overflow-hidden bg-no-repeat bg-cover h-screen" style={{
+        backgroundPosition: "70%",
         backgroundPositionY: "0%",
-        height: "350px",
-        backgroundImage: "url(https://drive.google.com/uc?export=view&id=12WDgzUoeXt46G2CZZ0YyvHst6YYd3RlP)"
+        backgroundImage: "url(https://xxdrive.google.com/uc?export=view&id=1XrkcKQ2dxEfvGra4XgSylWMrbNiaxeuQ)"
       }}>
         <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}>
           <div className="flex justify-center items-center h-full">
-            <div className="text-center text-white px-6 md:px-12">
-              <h1 className="text-5xl font-bold mt-0 mb-6">Arbara Software</h1>
-              <h3 className="text-xl font-bold mb-8">Ni ludu! Ludamus!</h3>
-              <button type="button"
+            <div className="text-center justify-items-center text-white px-6 md:px-12">
+              <h1 className="text-5xl font-bold mt-0 mb-6">{/* Arbara Software */} Arbara Software</h1>
+              <h3 className="text-xl font-bold mb-8">Ni ludu!</h3>
+              {/* <button type="button"
                 className="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                 data-mdb-ripple="true" data-mdb-ripple-color="light">
                 Get started
-              </button>
+              </button> */}
+              <div className="flex items-center justify-center mt-48">
+                <Scroll to="content-applications" smooth={true}>
+                  <HiChevronDoubleDown className=" mx-6 my-2.5 text-4xl animate-bounce" />
+                </Scroll>
+              </div>
             </div>
           </div>
         </div>
