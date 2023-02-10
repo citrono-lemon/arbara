@@ -48,15 +48,17 @@ export default function CustomHeader() {
       {/*backgroundImage: "url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp')",*/}
       <div className="relative overflow-hidden bg-no-repeat bg-cover h-screen" style={{
         backgroundPosition: "70%",
-        backgroundPositionY: "0%",
-        backgroundImage: "url(https://xxdrive.google.com/uc?export=view&id=1XrkcKQ2dxEfvGra4XgSylWMrbNiaxeuQ)"
+        backgroundPositionY: "30%",
+        backgroundImage: "url(https://drive.google.com/uc?export=view&id=1XrkcKQ2dxEfvGra4XgSylWMrbNiaxeuQ)"
       }}>
         <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}>
           <div className="flex justify-center items-center h-full">
             <div className="text-center justify-items-center text-white px-6 md:px-12">
-              <h1 className="text-5xl font-bold mt-0 mb-6">{/* Arbara Software */} Arbara Software</h1>
-              <h3 className="text-xl font-bold mb-8">Ni ludu!</h3>
+              <h1 className="text-5xl font-bold mt-0 mb-6">Arbara Software</h1>
+              <h3 className="text-xl font-bold mb-8">
+                En la profunda verda arbaro, vi trovos la ludojn!
+              </h3>
               {/* <button type="button"
                 className="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                 data-mdb-ripple="true" data-mdb-ripple-color="light">

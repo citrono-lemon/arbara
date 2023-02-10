@@ -4,17 +4,18 @@ import IconLink from './IconLink'
 
 type Props = {
   title: string,
-  description: string,
+  description?: string,
+  children: React.ReactNode
 }
 
-const AppCard: React.FC<Props> = (props: Props) => {
+const AppCard: React.FC<Props> = ({ title, children }) => {
   return (
     <div className="max-w-sm px-5 py-3 mx-5 my-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        {props.title}
+        {title}
       </h5>
       <p className="px-3 mb-3 font-normal text-gray-700 dark:text-gray-400">
-        {props.description}
+        {children}
       </p>
       <div className="flex items-center mb-1 justify-start">
         <IconLink href={"#"} hint={"unchi"} key={"unchi"}>
