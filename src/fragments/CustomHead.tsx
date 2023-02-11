@@ -1,3 +1,4 @@
+import { url } from '@/utility'
 import { HiChevronDoubleDown } from 'react-icons/hi'
 import { Link as Scroll } from 'react-scroll'
 
@@ -7,7 +8,7 @@ export default function CustomHead() {
       <div className="relative overflow-hidden bg-no-repeat bg-cover h-screen" style={{
         backgroundPosition: "70%",
         backgroundPositionY: "30%",
-        backgroundImage: "url(/images/top.png)"
+        backgroundImage: "url(" + url("/images/top.png") + ")"
       }}>
         <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}>

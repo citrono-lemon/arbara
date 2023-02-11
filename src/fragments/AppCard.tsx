@@ -1,6 +1,7 @@
 import { SiAndroid, SiApple } from 'react-icons/si'
 import IconLink from './IconLink'
 import Image from 'next/image'
+import { url } from '@/utility'
 
 type Props = {
   title: string,
@@ -15,7 +16,7 @@ const AppCard: React.FC<Props> = ({ title, src, children, imagePosY }) => {
     <div className="shadow hover:shadow-md w-full bg-white rounded-lg overflow-hidden  cursor-pointer">
       <div className="relative object-cover w-full h-80">
         {
-          src ? (<Image src={src} alt={"title"} fill className="object-cover w-full h-full" style={{ objectPosition: "50% " + (imagePosY ?? "50%") }} />) : (<img
+          src ? (<Image src={url(src)} alt={"title"} fill className="object-cover w-full h-full" style={{ objectPosition: "50% " + (imagePosY ?? "50%") }} />) : (<img
             className="object-cover w-full h-full"
             src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80"
             alt="Flower and sky"
