@@ -16,8 +16,8 @@ export default function Applications() {
         <AppCard title="Sample Card">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </AppCard>
-        <AppCard title="Cat in arca" src="/images/cat.png" imagePosY='50%'>
-          Catem necare inexcusabilis est!
+        <AppCard title="Feles in arca" src="/images/cat.png" imagePosY='50%'>
+          Inexcusabile felem necare est! Feles vivit!
         </AppCard>
         <AppCard title="Icelandic">
           Það er of erfitt fyrir hann að læra þetta tungumál.
