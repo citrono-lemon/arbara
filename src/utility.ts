@@ -23,5 +23,5 @@ export function url(filename: string): string {
   }
   return publicRuntimeConfig.urlPrefix + filename
   */
-  return "/url" + filename
+  return "/arbara" + filename
 }
