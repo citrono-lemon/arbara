@@ -19,8 +19,8 @@ const AppCard: React.FC<Props> = ({ title, src, children, imagePosY, ios, androi
     <div className="group relative block bg-black cursor-default">
 
       {
-        src ? (<Image src={url(src)} alt={"title"} fill className="object-cover w-full h-full" style={{ objectPosition: "50% " + (imagePosY ?? "50%") }} />) : (<img
-          className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+        src ? (<Image src={url(src)} alt={"title"} fill className="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity group-hover:opacity-50" style={{ objectPosition: "50% " + (imagePosY ?? "50%") }} />) : (<img
+          className="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity group-hover:opacity-50"
           src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80"
           alt="Flower and sky"
         />)

@@ -3,7 +3,7 @@ import React from 'react'
 type Props = {
   href: string
   hint: string
-  enable: boolean
+  enable?: boolean
   children: React.ReactNode
 }
 

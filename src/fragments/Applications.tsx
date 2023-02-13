@@ -16,7 +16,7 @@ export default function Applications() {
         <AppCard title="Sample Card">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </AppCard>
-        <AppCard title="Feles in arca" src="/images/cat.png" imagePosY='50%'>
+        <AppCard title="Feles in arca" src="/images/cat.png" imagePosY='20%'>
           Inexcusabile felem necare est! Feles vivit!
         </AppCard>
         <AppCard title="Icelandic">
@@ -24,6 +24,8 @@ export default function Applications() {
         </AppCard>
 
       </div>
+
+
     </div>
   )
 }
