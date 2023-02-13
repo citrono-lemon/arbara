@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Top() {
   return (
-    <main>
+    <main className="">
       <Applications />
     </main>
   )

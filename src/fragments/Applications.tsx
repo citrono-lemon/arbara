@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Applications() {
   return (
     <div className='min-h-screen mx-1' id="content-applications">
-      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-5 gap-4 container mx-auto justify-center'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-5 gap-4 container mx-auto justify-center'>
         <AppCard title="Cute Girls Slide Puzzle" src="/images/Screenshot_20230212-020543.png">
           Some slide puzzles including 3x3, 4x4, 4x5, 5x4, 5x5
         </AppCard>
