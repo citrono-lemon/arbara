@@ -9,11 +9,15 @@ type Props = {
   description?: string,
   imagePosY?: string,
   children: React.ReactNode
+  ios?: boolean,
+  android?: boolean
 }
 
-const AppCard: React.FC<Props> = ({ title, src, children, imagePosY }) => {
+const AppCard: React.FC<Props> = ({ title, src, children, imagePosY, ios, android }) => {
   return (
-    <a href="#" className="group relative block bg-black">
+
+    <div className="group relative block bg-black cursor-default">
+
       {
         src ? (<Image src={url(src)} alt={"title"} fill className="object-cover w-full h-full" style={{ objectPosition: "50% " + (imagePosY ?? "50%") }} />) : (<img
           className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
@@ -22,28 +26,32 @@ const AppCard: React.FC<Props> = ({ title, src, children, imagePosY }) => {
         />)
       }
 
-      <div className="relative p-8">
-        <p className="text-2xl font-bold text-white bg-opacity-20 px-5 bg-black w-fit rounded-xl">{title}</p>
+      <div className="relative ">
+        <div className="text-2xl font-bold text-white px-5 bg-teal-800 w-full py-2 bg-opacity-80">
+          {title}
+        </div>
 
-        <div className="mt-48">
+        <div className="mt-1">
           <div
             className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
           >
-            <p className="text-sm text-white">
-              {children}
-            </p>
+            <div className="text-sm h-48 text-white">
+              <div className="absolute bottom-4 px-8">
+                {children}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex items-center mb-1 mt-3 text-white bottom-0 justify-start">
-          <IconLink href={"#"} hint={"unchi"} key={"unchi"}>
+        <div className="relative flex items-center pb-3 pt-3 text-white bg-teal-800 bg-opacity-50 justify-start">
+          <IconLink href={"#"} hint={"unchi"} key={"unchi"} enable={android ?? false}>
             <SiAndroid className="text-3xl mx-2" />
           </IconLink>
-          <IconLink href={"#"} hint={"unchi"} key={"unchi2"}>
+          <IconLink href={"#"} hint={"unchi"} key={"unchi2"} enable={ios ?? false}>
             <SiApple className="text-3xl mx-2" />
           </IconLink>
         </div>
       </div>
-    </a>
+    </div>
 
 
   )
